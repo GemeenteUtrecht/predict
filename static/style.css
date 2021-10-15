@@ -10,36 +10,46 @@ body, button, code, input, select, textarea {
 	margin: 0;
 }
 
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'. header .'
+	'. main .'
+	'footer footer footer';
+	grid-template-columns: 1fr 60rem 1fr;
+	grid-template-rows: min-content minmax(30rem, auto) auto;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.empty{
+	grid-area:aside;
+	background: transparent;
+}
+
 header{
-	margin-block-end: 0.6em;
-	margin-block-start: 1em;
-	margin-inline-end: 0.6em;
-	max-width: 60rem;
+	grid-area: header;
+	padding-block-end: 0.6em;
+	padding-block-start: 1em;
+	padding-inline-end: 2em;
+	padding-inline-start: 2em;
 	border: 0px solid red;
 	background: var(--utrecht-color-white);
 }
 
 main{
-	max-width: 60rem;
 	background: var(--utrecht-color-white);
+	grid-area: main;
+	padding-block-end: 0.6em;
+	padding-block-start: 1em;
+	padding-inline-end: 2em;
+	padding-inline-start: 2em;
 
 }
 
-.parent {
-	display: grid;
-	grid-template-columns: 1fr repeat(3, 20rem) 1fr;
-	grid-template-rows: 15rem auto;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+footer{
+	grid-area: footer;
 }
-
-.div1 { grid-area: 1 / 2 / 2 / 3; }
-.div2 { grid-area: 1 / 3 / 2 / 4; }
-.div3 { grid-area: 2 / 3 / 3 / 4; }
-.div4 { grid-area: 2 / 3 / 3 / 5; }
-.div5 { grid-area: 2 / 2 / 3 / 4; }
-.div6 { grid-area: 1 / 3 / 2 / 5; }
-
 
 label{
 	clear: both;
