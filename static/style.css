@@ -8,6 +8,7 @@ body, button, code, input, select, textarea {
 	background: var(--utrecht-color-grey-95);
 	padding: 0;
 	margin: 0;
+	height: 100%;
 }
 
 .grid-container {
@@ -17,9 +18,11 @@ body, button, code, input, select, textarea {
 	'. main .'
 	'footer footer footer';
 	grid-template-columns: 1fr 60rem 1fr;
-	grid-template-rows: min-content minmax(30rem, auto) auto;
+	grid-template-rows: min-content 1fr min-content;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+  height: 100vh;
+  margin: 0;
 }
 
 .empty{
