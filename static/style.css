@@ -16,7 +16,7 @@ body, button, code, input, select, textarea {
 	'. header .'
 	'. main .'
 	'footer footer footer';
-	grid-template-columns: 1fr 60rem 1fr;
+	grid-template-columns: 1fr minmax(20rem, 60rem) 1fr;
 	grid-template-rows: min-content 1fr min-content;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
@@ -31,7 +31,7 @@ body, button, code, input, select, textarea {
 header{
 	grid-area: header;
 	padding-block-end: 0.6em;
-	padding-block-start: 1em;
+	padding-block-start: 1.4em;
 	padding-inline-end: 2em;
 	padding-inline-start: 2em;
 	border: 0px solid red;
