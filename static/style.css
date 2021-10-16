@@ -10,6 +10,20 @@ body, button, code, input, select, textarea {
 	margin: 0;
 }
 
+.body10, .body9{
+	background: hsl(120, 60%, 97%);
+}
+
+ .body8, .body7{
+	background: hsl(48, 100%, 97%);
+}
+
+.body6, .body5{
+	background: hsl(0, 100%, 98%);
+
+}
+
+
 .grid-container {
 	display: grid;
 	grid-template-areas:
@@ -81,6 +95,7 @@ em.klacht{
 	background-repeat: no-repeat;
 	padding-inline-start: 0;
 }
+
 
 .font10, .font9{
 	background: hsl(120, 60%, 90%);
