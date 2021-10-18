@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await response.json()
             predictionResult.innerHTML = `<em class="font${Math.round(data.probability*10)}">${Math.round(data.probability*10000)/100}%</em> kans dat de bovenstaande tekst een <em class="${data.label}">${data.label}</em> is`
             
-
             MyClass = `body${Math.round(data.probability*10)}`
            //alert(MyClass);
             setBodyResult.className="";
