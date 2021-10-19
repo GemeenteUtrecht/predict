@@ -1,6 +1,7 @@
 body {
 	padding: 0 2em;
 	background: #fefefe;
+	--utrecht-logo-min-width: 400px; 
 }
 
 body, button, code, input, select, textarea {
