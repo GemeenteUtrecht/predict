@@ -1,9 +1,9 @@
 # Utrecht predict
 
-Install Flask with:
+Install the dependencies with:
 
 ```bash
-pip3 install Flask
+pip3 install -r requirements.txt
 ```
 
 Then run the application with:
